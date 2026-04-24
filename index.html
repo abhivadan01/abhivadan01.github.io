@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Abhivadan J – Electronics & Instrumentation Engineer specializing in Embedded Systems, Edge AI, IoT, and Industrial Automation.">
+  <title>Abhivadan J | Embedded Systems & Edge AI Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow g1"></div>
+  <div class="bg-glow g2"></div>
+  <div class="bg-glow g3"></div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">AJ.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-greeting"><span class="line"></span>Hello, I'm</div>
+        <h1 class="hero-name">Abhivadan J</h1>
+        <p class="hero-role">I build <span class="typed" id="typedText"></span><span class="cursor" style="color:var(--accent);font-weight:100;">|</span></p>
+        <p class="hero-desc">
+          Electronics & Instrumentation Engineer with hands-on expertise in
+          <strong style="color:var(--accent);">Embedded Systems</strong>,
+          <strong style="color:var(--accent2);">Edge AI</strong>,
+          <strong style="color:var(--green);">IoT Hardware</strong>, and
+          <strong style="color:var(--accent3);">Industrial Automation</strong>.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work ↓</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-avatar">
+          <img src="assets/profile/my image.png" alt="Abhivadan J" id="profileImg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ ABOUT ═══════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="fade-up">
+          <p class="about-text">
+            B.E. graduate in Electronics & Instrumentation from <strong style="color:var(--white);">Bannari Amman Institute of Technology</strong>,
+            passionate about building real-world hardware-software systems that solve tangible problems.
+          </p>
+          <p class="about-text" style="margin-top:16px; color:var(--muted);">
+            From designing <strong style="color:var(--accent);">embedded control systems</strong> to deploying 
+            <strong style="color:var(--accent2);">Edge AI models on microcontrollers</strong>, I bridge the gap between 
+            industrial instrumentation and modern intelligent systems. My work has been recognized at national-level 
+            competitions, and I'm driven by the challenge of making embedded intelligence accessible and affordable.
+          </p>
+          <p class="about-text" style="margin-top:16px; color:var(--muted);">
+            I thrive at the intersection of hardware engineering and software development — designing circuits, 
+            writing firmware, training ML models, and building full-stack web interfaces.
+          </p>
+        </div>
+        <div class="fade-up">
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number" data-target="10">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Awards</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="15">0</div>
+              <div class="stat-label">Tech Skills</div>
+            </div>
+          </div>
+          <div style="margin-top:24px; display:flex; flex-wrap:wrap; gap:10px;">
+            <span style="padding:8px 16px; border-radius:50px; font-size:13px; background:rgba(14,165,233,0.08); border:1px solid rgba(14,165,233,0.2); color:#7dd3fc;">🔧 Industrial Instrumentation</span>
+            <span style="padding:8px 16px; border-radius:50px; font-size:13px; background:rgba(99,102,241,0.08); border:1px solid rgba(99,102,241,0.2); color:#a5b4fc;">🤖 Embedded Systems</span>
+            <span style="padding:8px 16px; border-radius:50px; font-size:13px; background:rgba(34,197,94,0.08); border:1px solid rgba(34,197,94,0.2); color:#86efac;">🌐 IoT Applications</span>
+            <span style="padding:8px 16px; border-radius:50px; font-size:13px; background:rgba(168,85,247,0.08); border:1px solid rgba(168,85,247,0.2); color:#d8b4fe;">🧠 Edge AI / ML</span>
+            <span style="padding:8px 16px; border-radius:50px; font-size:13px; background:rgba(14,165,233,0.08); border:1px solid rgba(14,165,233,0.2); color:#7dd3fc;">💻 Software Development</span>
+            <span style="padding:8px 16px; border-radius:50px; font-size:13px; background:rgba(99,102,241,0.08); border:1px solid rgba(99,102,241,0.2); color:#a5b4fc;">⚙️ Process Control</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SKILLS ═══════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">A diverse toolkit spanning hardware, firmware, and software.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category fade-up">
+          <div class="skill-cat-icon">⚙️</div>
+          <h3 class="skill-cat-title">Instrumentation & Automation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Industrial Instrumentation</span>
+            <span class="skill-tag">Process Control</span>
+            <span class="skill-tag">PLC Programming</span>
+            <span class="skill-tag">Ladder Logic</span>
+            <span class="skill-tag">HMI</span>
+            <span class="skill-tag">Pneumatic Systems</span>
+            <span class="skill-tag">Sensor & Actuator Interfacing</span>
+            <span class="skill-tag">Flow Calibration</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-cat-icon">🔌</div>
+          <h3 class="skill-cat-title">Embedded & IoT</h3>
+          <div class="skill-tags">
+            <span class="skill-tag purple">Embedded Systems Design</span>
+            <span class="skill-tag purple">ESP32 / Raspberry Pi</span>
+            <span class="skill-tag purple">GPIO / RFID / I2C / SPI</span>
+            <span class="skill-tag purple">IoT Hardware Integration</span>
+            <span class="skill-tag purple">Cloud Data Logging</span>
+            <span class="skill-tag purple">e-Paper Display</span>
+            <span class="skill-tag purple">OLED Integration</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-cat-icon">🧠</div>
+          <h3 class="skill-cat-title">AI & Software</h3>
+          <div class="skill-tags">
+            <span class="skill-tag green">Edge AI (1D CNN)</span>
+            <span class="skill-tag green">On-device Inference</span>
+            <span class="skill-tag green">C / Python / Java</span>
+            <span class="skill-tag green">HTML / CSS / JavaScript</span>
+            <span class="skill-tag green">Firmware Development</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-cat-icon">🛠️</div>
+          <h3 class="skill-cat-title">Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Siemens TIA Portal</span>
+            <span class="skill-tag purple">Arduino IDE</span>
+            <span class="skill-tag">Proteus</span>
+            <span class="skill-tag purple">Fusion 360</span>
+            <span class="skill-tag green">LabVIEW</span>
+            <span class="skill-tag">KiCad</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-cat-icon">🤝</div>
+          <h3 class="skill-cat-title">Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag purple">Leadership</span>
+            <span class="skill-tag green">Teamwork</span>
+            <span class="skill-tag">Critical Thinking</span>
+            <span class="skill-tag purple">Time Management</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up">
+          <div class="skill-cat-icon">🌐</div>
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">English – Fluent</span>
+            <span class="skill-tag purple">Tamil – Native</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PROJECTS ═══════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Award-winning embedded systems, IoT solutions, and intelligent automation.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card fade-up" onclick="openModal(0)">
+          <div class="project-thumb">
+            <img src="assets/projects/handwriting_device/thumbnail.png" alt="Smart Handwriting Learning Device">
+            <div class="project-overlay"></div>
+            <span class="project-badge">🏆 2nd Prize</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Smart Handwriting Learning Device</h3>
+            <div class="project-role-tag">Embedded Systems & Edge AI Developer</div>
+            <p class="project-desc">Low-cost stencil device using conductive copper path tracing with real-time touch feedback and on-device Edge AI for handwriting improvement.</p>
+            <div class="project-tags">
+              <span class="project-tag">ESP32</span>
+              <span class="project-tag">Raspberry Pi</span>
+              <span class="project-tag">1D CNN</span>
+              <span class="project-tag">Edge AI</span>
+              <span class="project-tag">e-Paper</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-up" onclick="openModal(1)">
+          <div class="project-thumb">
+            <img src="assets/projects/milk_dispensing/Screenshot 2026-04-24 151327.png" alt="Automatic Milk Dispensing System">
+            <div class="project-overlay"></div>
+            <span class="project-badge">🥇 Finalist</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Automatic Milk Dispensing System</h3>
+            <div class="project-role-tag">Embedded & IoT Developer · Flow Calibration Engineer</div>
+            <p class="project-desc">Complete embedded firmware for automated liquid dispensing with RFID authentication, flow sensor calibration, and cloud-based data logging.</p>
+            <div class="project-tags">
+              <span class="project-tag">Microcontroller</span>
+              <span class="project-tag">RFID</span>
+              <span class="project-tag">YF-S201</span>
+              <span class="project-tag">IoT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-up" onclick="openModal(2)">
+          <div class="project-thumb">
+            <img src="assets/projects/pneumatic_control/thumbnail.jpg" alt="Intelligent Pneumatic Control System">
+            <div class="project-overlay"></div>
+            <span class="project-badge">🏭 JASC 2024</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Intelligent Pneumatic Control System</h3>
+            <div class="project-role-tag">Design & Automation Engineer</div>
+            <p class="project-desc">PLC-based pneumatic automation setup for industrial applications with CAD models and tuned system parameters for smooth actuation.</p>
+            <div class="project-tags">
+              <span class="project-tag">PLC</span>
+              <span class="project-tag">Ladder Logic</span>
+              <span class="project-tag">Pneumatics</span>
+              <span class="project-tag">Fusion 360</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card fade-up" onclick="openModal(3)">
+          <div class="project-thumb">
+            <img src="assets/projects/environmental_monitoring/thumbnail.png" alt="Automated Environmental Monitoring System">
+            <div class="project-overlay"></div>
+            <span class="project-badge">🌡️ IoT System</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Automated Environmental Monitoring</h3>
+            <div class="project-role-tag">Circuit & System Developer</div>
+            <p class="project-desc">Multi-sensor IoT system using ESP32 with gas, temperature, and humidity sensors for automated plant condition control.</p>
+            <div class="project-tags">
+              <span class="project-tag">ESP32</span>
+              <span class="project-tag">Gas Sensor</span>
+              <span class="project-tag">DHT</span>
+              <span class="project-tag">OLED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card fade-up" onclick="openModal(4)">
+          <div class="project-thumb">
+            <img src="assets/projects/smart_fob/thumbnail.png" alt="AI-Powered Smart FOB & Road Safety System">
+            <div class="project-overlay"></div>
+            <span class="project-badge">🚦 Semi-Finalist</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">AI-Powered Smart FOB & Road Safety</h3>
+            <div class="project-role-tag">Ideation · System Architecture · Presentation</div>
+            <p class="project-desc">AI-powered Smart FOB and road safety system using IoT, motion sensors, and smart signage. Selected for National Semi-Final by NHAI & HOAI.</p>
+            <div class="project-tags">
+              <span class="project-tag">AI</span>
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Motion Sensors</span>
+              <span class="project-tag">Smart Signage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card fade-up" onclick="openModal(5)">
+          <div class="project-thumb">
+            <img src="assets/projects/local_chat/thumbnail.png" alt="Lab Equipment Booking & Maintenance Tracker">
+            <div class="project-overlay"></div>
+            <span class="project-badge">💻 Web App</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Lab Equipment Booking & Tracker</h3>
+            <div class="project-role-tag">Frontend / Software Developer</div>
+            <p class="project-desc">Responsive, role-based web app for students to book lab equipment and raise maintenance tickets with tabbed dashboards.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PROJECT MODAL ═══════ -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ═══════ JOURNEY ═══════ -->
+  <section id="journey">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">The Deep Dive</span>
+        <h2 class="section-title">Building Journey</h2>
+        <p class="section-subtitle">From Copper Plates to Custom Neural Networks — the full story of the Smart Handwriting Learning Device.</p>
+      </div>
+      <p class="journey-intro fade-up">
+        What started as a competition entry for <strong>Innovate2Educate at WAVES 2025</strong> evolved into a full-stack embedded AI product. Here's every architecture decision, failure, pivot, and breakthrough.
+      </p>
+      <div class="journey-timeline">
+
+        <!-- Phase 1 -->
+        <div class="phase-card fade-up" onclick="this.classList.toggle('expanded')">
+          <span class="phase-num">Phase 1</span>
+          <h3 class="phase-title">The Copper Plate Prototype</h3>
+          <p class="phase-subtitle">Hardware Brute-Force Approach</p>
+          <p class="phase-summary">Our first prototype was purely electrical — <strong>copper plates</strong> with 3 contact pins per letter (Start, Mid, End). An <strong>Arduino Mega</strong> (54 digital I/O pins) read pin states while a child traces with a conductive stylus.</p>
+          <div class="phase-detail"><div class="phase-detail-inner">
+            <p>Each letter needed 3 GPIO pins, so 26 letters × 3 = <strong>78 pins</strong>. An Arduino Uno drove an SPI-based TFT LCD for the UI. The two boards communicated via Serial.</p>
+            <pre>// V1 Legacy Code: Scaling to Tamil (200+ chars)
+// would need 600+ physical pins!
+const int numLetters = 26;
+const int letterPins[numLetters][3] = {
+  {22, 23, 24}, {23, 24, 25}, ...
+};</pre>
+            <span class="phase-result fail">❌ Fatal Flaw: Zero scalability — new languages = new copper plates</span>
+          </div></div>
+          <div class="phase-expand-hint">Click to read more <span class="arrow">▼</span></div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-card fade-up" onclick="this.classList.toggle('expanded')">
+          <span class="phase-num">Phase 2</span>
+          <h3 class="phase-title">Web Canvas + Rule-Based Engine</h3>
+          <p class="phase-subtitle">Software Pivot with Geometric Features</p>
+          <p class="phase-summary">Pivoted to a <strong>4-wire resistive touchpad</strong> and built a browser-based canvas simulator (HTML5 Canvas + JS) to prototype recognition algorithms with <strong>16 directional stroke features</strong>.</p>
+          <div class="phase-detail"><div class="phase-detail-inner">
+            <p>Features: 8 cardinal directions (U, D, L, R, UL, UR, DL, DR), geometric properties (<code>isClosed</code>, <code>hasTopPeak</code>, <code>hasMiddleBar</code>), start/end position in a 3×3 grid, and shape properties like <code>aspectRatio</code>.</p>
+            <p>Each letter had a hand-coded scoring function. E.g., Letter "A" gets +40 for <code>hasTopPeak</code>, +20 for diagonal strokes.</p>
+            <span class="phase-result success">✅ ~80% accuracy for English A–Z</span><br>
+            <span class="phase-result fail">❌ Collapsed on Tamil — couldn't distinguish 'அ' vs 'இ'</span>
+          </div></div>
+          <div class="phase-expand-hint">Click to read more <span class="arrow">▼</span></div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase-card fade-up" onclick="this.classList.toggle('expanded')">
+          <span class="phase-num">Phase 3</span>
+          <h3 class="phase-title">1D Convolutional Neural Network</h3>
+          <p class="phase-subtitle">Deep Learning on Sequential Stroke Data</p>
+          <p class="phase-summary">Designed a lightweight <strong>1D CNN</strong> that processes raw (x,y) coordinate sequences — not images. <strong>Conv1D(32)→Pool→Conv1D(64)→Pool→Conv1D(128)→GAP→Dense(128)→Softmax</strong>.</p>
+          <div class="phase-detail"><div class="phase-detail-inner">
+            <p><strong>Why 1D CNN, not 2D?</strong> A handwritten stroke is a time-series of (x,y) coordinates, not an image. 1D CNN processes the raw sequence → smaller model, faster inference, better generalization.</p>
+            <p><strong>Preprocessing:</strong> Bounding-box normalization to [0,1] range, then arc-length resampling to exactly <strong>64 evenly-spaced points</strong> using <code>np.interp()</code>.</p>
+            <p><strong>Data:</strong> ~7,000+ samples collected via web simulator, 3× augmentation, stratified 85/15 split.</p>
+            <span class="phase-result success">✅ 98–99% validation accuracy on web canvas data</span>
+          </div></div>
+          <div class="phase-expand-hint">Click to read more <span class="arrow">▼</span></div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="phase-card fade-up" onclick="this.classList.toggle('expanded')">
+          <span class="phase-num">Phase 4</span>
+          <h3 class="phase-title">The Hardware Reality Check</h3>
+          <p class="phase-subtitle">ADC Noise, Pressure Variance & Domain Gap</p>
+          <p class="phase-summary">Deploying to physical hardware revealed a critical <strong>domain gap</strong> — the same location produces different ADC values depending on stylus pressure. ESP32's 12-bit ADC was essential over Arduino's 10-bit.</p>
+          <div class="phase-detail"><div class="phase-detail-inner">
+            <p><strong>The Problem:</strong> Raw coordinates clustered in a noisy band of ~2000–3999, not clean 0–1. Each coordinate averaged over <strong>10 consecutive ADC samples</strong> (oversampling), with a 200 ADC threshold filtering false touches.</p>
+            <p><strong>Why ESP32:</strong> The 4-wire resistive protocol requires rapidly switching GPIOs between OUTPUT and INPUT. Arduino Uno's GPIO 34/35 are INPUT-ONLY, breaking the protocol.</p>
+            <span class="phase-result pivot">⚠️ Fix: Re-collected thousands of real touchpad samples & retrained</span>
+          </div></div>
+          <div class="phase-expand-hint">Click to read more <span class="arrow">▼</span></div>
+        </div>
+
+        <!-- Phase 5 -->
+        <div class="phase-card fade-up" onclick="this.classList.toggle('expanded')">
+          <span class="phase-num">Phase 5</span>
+          <h3 class="phase-title">Wi-Fi Bridge & Flask Server</h3>
+          <p class="phase-subtitle">Networked Validation Pipeline</p>
+          <p class="phase-summary">Built an intermediate networked version: ESP32 sends raw stroke JSON via <strong>Wi-Fi HTTP POST</strong> to a local Flask server running the TensorFlow model. Validated the AI pipeline end-to-end.</p>
+          <div class="phase-detail"><div class="phase-detail-inner">
+            <p>Architecture: <code>ESP32 → Wi-Fi HTTP POST → Flask (TensorFlow .h5) → Response → Arduino Uno → TFT Display</code></p>
+            <p>This proved the concept worked but required a laptop running the server — not a standalone product.</p>
+            <span class="phase-result pivot">⚠️ Works but requires laptop — need fully offline solution</span>
+          </div></div>
+          <div class="phase-expand-hint">Click to read more <span class="arrow">▼</span></div>
+        </div>
+
+        <!-- Phase 6 -->
+        <div class="phase-card fade-up" onclick="this.classList.toggle('expanded')">
+          <span class="phase-num">Phase 6</span>
+          <h3 class="phase-title">True Edge AI — Final Architecture</h3>
+          <p class="phase-subtitle">Custom NumPy Inference Engine on Raspberry Pi</p>
+          <p class="phase-summary">Eliminated TensorFlow entirely. Built a <strong>pure NumPy inference engine</strong> — reimplemented Conv1D, MaxPooling, Dense, ReLU, Softmax in raw linear algebra. Inference in <strong>&lt;100ms</strong> on Pi 3B.</p>
+          <div class="phase-detail"><div class="phase-detail-inner">
+            <p><strong>Weight Extraction:</strong> Custom script loads Keras .h5, extracts all weight matrices and bias vectors into a single <code>.npz</code> file.</p>
+            <p><strong>NumPy Layers:</strong> Conv1D with manual zero-padding + sliding-window dot product. MaxPooling via strided maximum. GlobalAveragePooling = <code>np.mean(x, axis=0)</code>.</p>
+            <p><strong>Verification:</strong> Max output deviation vs TensorFlow: <strong>0.000001</strong> — mathematically identical.</p>
+            <p><strong>Communication:</strong> USB Serial @ 9600 baud (115200 caused buffer overflow during audio playback). Audio via LM386 amplifier + Pi 3.5mm jack.</p>
+            <span class="phase-result success">✅ Fully standalone, offline, boots as an appliance</span>
+          </div></div>
+          <div class="phase-expand-hint">Click to read more <span class="arrow">▼</span></div>
+        </div>
+
+      </div>
+
+      <!-- Final Specs -->
+      <div class="journey-final fade-up">
+        <h4>🏁 Final Device Specifications</h4>
+        <div class="journey-specs">
+          <div class="spec-item"><div class="spec-val">&lt;100ms</div><div class="spec-key">Inference Time</div></div>
+          <div class="spec-item"><div class="spec-val">98-99%</div><div class="spec-key">Accuracy</div></div>
+          <div class="spec-item"><div class="spec-val">7,000+</div><div class="spec-key">Training Samples</div></div>
+          <div class="spec-item"><div class="spec-val">Zero</div><div class="spec-key">Framework Deps</div></div>
+          <div class="spec-item"><div class="spec-val">Pure NumPy</div><div class="spec-key">Inference Engine</div></div>
+          <div class="spec-item"><div class="spec-val">Offline</div><div class="spec-key">No Cloud Needed</div></div>
+        </div>
+        <p style="margin-top:16px;"><strong>The biggest lesson?</strong> Real hardware doesn't behave like simulations. Every time we moved from software to physical sensors, everything broke — and fixing each break taught us more than any textbook.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ ACHIEVEMENTS ═══════ -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card fade-up">
+          <div class="ach-icon">🥈</div>
+          <h4 class="ach-title">2nd Prize – WAVES Summit 2025</h4>
+          <p class="ach-desc">Innovate2Educate Challenge. Showcased Smart Handwriting Learning Device supporting Digital India & NEP 2020 goals.</p>
+        </div>
+        <div class="achievement-card fade-up">
+          <div class="ach-icon">🏁</div>
+          <h4 class="ach-title">National Semi-Finalist – Road Safety Hackathon 2025</h4>
+          <p class="ach-desc">Selected by NHAI & HOAI for proposing an AI-powered Smart FOB and pedestrian safety system using IoT and real-time alerts.</p>
+        </div>
+        <div class="achievement-card fade-up">
+          <div class="ach-icon">🏆</div>
+          <h4 class="ach-title">Finalist – EW Challenge 2024</h4>
+          <p class="ach-desc">Impressed evaluators with precise flow measurement, RFID authentication, and IoT-based automation in milk dispensing system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ EDUCATION ═══════ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-item fade-up">
+          <div class="edu-inst">Bannari Amman Institute of Technology</div>
+          <div class="edu-deg">B.E. Electronics & Instrumentation Engineering</div>
+          <div class="edu-year">2022 – 2026 · Erode · CGPA: 7.67</div>
+        </div>
+        <div class="edu-item fade-up">
+          <div class="edu-inst">Grace Higher Secondary School</div>
+          <div class="edu-deg">12th (HSC)</div>
+          <div class="edu-year">2021 – 2022 · 81.33%</div>
+        </div>
+        <div class="edu-item fade-up">
+          <div class="edu-inst">Govt. High School Alathur Thattrapalayam</div>
+          <div class="edu-deg">10th (SSLC)</div>
+          <div class="edu-year">2019 – 2020 · 74%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Have a project idea or want to collaborate? Let's connect!</p>
+      </div>
+      <div class="contact-content">
+        <div class="fade-up">
+          <div class="contact-info-card">
+            <div class="contact-icon">📞</div>
+            <div><div class="contact-label">Phone</div><div class="contact-value">+91 9715887888</div></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">✉️</div>
+            <div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:jayabalabhivadan2002@gmail.com">jayabalabhivadan2002@gmail.com</a></div></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">📍</div>
+            <div><div class="contact-label">Location</div><div class="contact-value">Erode – 638455, Tamil Nadu, India</div></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">🔗</div>
+            <div><div class="contact-label">LinkedIn</div><div class="contact-value"><a href="https://www.linkedin.com/in/abhivadan-j-3395ab285/" target="_blank">linkedin.com/in/abhivadan-j</a></div></div>
+          </div>
+        </div>
+        <form class="contact-form fade-up" onsubmit="handleSubmit(event)">
+          <div class="form-group"><input type="text" placeholder="Your Name" required id="formName"></div>
+          <div class="form-group"><input type="email" placeholder="Your Email" required id="formEmail"></div>
+          <div class="form-group"><input type="text" placeholder="Subject" id="formSubject"></div>
+          <div class="form-group"><textarea placeholder="Your Message" required id="formMessage"></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message ✉️</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="mailto:jayabalabhivadan2002@gmail.com" title="Email">✉️</a>
+        <a href="https://www.linkedin.com/in/abhivadan-j-3395ab285/" target="_blank" title="LinkedIn">🔗</a>
+      </div>
+      <p>© 2025 Abhivadan J. Crafted with passion & precision.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
