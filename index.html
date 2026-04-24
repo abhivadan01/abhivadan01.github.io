@@ -392,7 +392,7 @@ const int letterPins[numLetters][3] = {
           <span class="phase-num">Phase 3</span>
           <h3 class="phase-title">1D Convolutional Neural Network</h3>
           <p class="phase-subtitle">Deep Learning on Sequential Stroke Data</p>
-          <p class="phase-summary">Designed a lightweight <strong>1D CNN</strong> that processes raw (x,y) coordinate sequences — not images. <strong>Conv1D(32)→Pool→Conv1D(64)→Pool→Conv1D(128)→GAP→Dense(128)→Softmax</strong>.</p>
+          <p class="phase-summary">Designed a lightweight <strong>1D CNN</strong> that processes raw (x,y) coordinate sequences — not images. <strong>Conv1D(32) → Pool → Conv1D(64) → Pool → Conv1D(128) → GAP → Dense(128) → Softmax</strong>.</p>
           <div class="phase-detail"><div class="phase-detail-inner">
             <p><strong>Why 1D CNN, not 2D?</strong> A handwritten stroke is a time-series of (x,y) coordinates, not an image. 1D CNN processes the raw sequence → smaller model, faster inference, better generalization.</p>
             <p><strong>Preprocessing:</strong> Bounding-box normalization to [0,1] range, then arc-length resampling to exactly <strong>64 evenly-spaced points</strong> using <code>np.interp()</code>.</p>
