@@ -4,7 +4,9 @@ const phrases = [
   'Edge AI Solutions',
   'IoT Hardware',
   'Industrial Automation',
-  'Intelligent Prototypes'
+  'Custom Firmware',
+  'Hardware Prototypes',
+  'Freelance Engineering'
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;
 const typedEl = document.getElementById('typedText');
@@ -204,12 +206,37 @@ document.getElementById('projectModal').addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
 // ═══════ CONTACT FORM ═══════
-function handleSubmit(e) {
-  e.preventDefault();
-  const name = document.getElementById('formName').value;
-  const email = document.getElementById('formEmail').value;
-  const subject = document.getElementById('formSubject').value || 'Portfolio Contact';
-  const message = document.getElementById('formMessage').value;
-  const mailto = `mailto:jayabalabhivadan2002@gmail.com?subject=${encodeURIComponent(subject + ' - from ' + name)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
-  window.location.href = mailto;
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const actionUrl = this.action;
+    
+    // If Formspree is configured, use it
+    if (actionUrl && !actionUrl.includes('YOUR_FORM_ID')) {
+      fetch(actionUrl, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          alert('✅ Message sent successfully! I\'ll get back to you soon.');
+          contactForm.reset();
+        } else {
+          alert('❌ Something went wrong. Please try WhatsApp or email directly.');
+        }
+      }).catch(() => {
+        alert('❌ Network error. Please try WhatsApp or email directly.');
+      });
+    } else {
+      // Fallback to mailto
+      const name = document.getElementById('formName').value;
+      const email = document.getElementById('formEmail').value;
+      const subject = document.getElementById('formSubject').value || 'Portfolio Contact';
+      const message = document.getElementById('formMessage').value;
+      const mailto = `mailto:jayabalabhivadan2002@gmail.com?subject=${encodeURIComponent(subject + ' - from ' + name)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+      window.location.href = mailto;
+    }
+  });
 }
