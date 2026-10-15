@@ -1,11 +1,12 @@
 // ═══════ TYPING EFFECT ═══════
 const phrases = [
-  'Generative AI & LLMs',
-  'Full-Stack Software',
-  'Autonomous AI Agents & RAG',
-  'Python & Backend APIs',
-  'Edge AI & NumPy Engines',
-  'Intelligent Systems'
+  'Embedded Systems',
+  'Edge AI Solutions',
+  'IoT Hardware',
+  'Industrial Automation',
+  'Custom Firmware',
+  'Hardware Prototypes',
+  'Freelance Engineering'
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;
 const typedEl = document.getElementById('typedText');
