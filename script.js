@@ -102,6 +102,21 @@ const projectData = [
     tags: ['ESP32', 'Raspberry Pi', '1D CNN', 'Edge AI', 'e-Paper', 'Python', 'C']
   },
   {
+    name: 'Personal AI Agent & Autonomous Workspace (v3.0)',
+    role: 'Full-Stack & AI Systems Developer',
+    award: '🧠 GenAI, Local RAG & Autonomous Agent System',
+    media: 'assets/projects/personal_agent/thumbnail.png',
+    mediaType: 'image',
+    bullets: [
+      'Built a modular, privacy-first autonomous personal agent powered by multi-provider LLMs (<strong>Groq OSS 120B, Google Gemini, OpenRouter</strong>).',
+      'Engineered a local <strong>RAG (Retrieval-Augmented Generation)</strong> pipeline to ingest, index, and query personal notes, academic records, and technical documentation.',
+      'Integrated an extensible system tool engine supporting automated file management, real-time web search, system diagnostics, and shell execution.',
+      'Designed an interactive, responsive dark-themed web UI with multi-session management, persistent conversation history, and real-time backend health monitoring.',
+      'Implemented robust prompt safety guardrails, dynamic model switching, and structured context retrieval.'
+    ],
+    tags: ['Python', 'FastAPI', 'Groq API', 'Google Gemini', 'RAG', 'Agentic AI', 'JavaScript', 'HTML/CSS']
+  },
+  {
     name: 'Automatic Milk Dispensing System',
     role: 'Embedded & IoT Developer · Flow Calibration Engineer',
     award: '🥇 Finalist – EW Challenge 2024',
