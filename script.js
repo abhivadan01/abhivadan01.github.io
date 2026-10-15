@@ -6,6 +6,7 @@ const phrases = [
   'Industrial Automation',
   'Custom Firmware',
   'Hardware Prototypes',
+  'Generative AI & LLMs',
   'Freelance Engineering'
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;
